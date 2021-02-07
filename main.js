@@ -1,13 +1,9 @@
 // First step : ES6 Variable declare with querySelector class target 
 
 const mainUrl = "https://www.themealdb.com/api/json/v1/1/";
-
 const inputSearch = document.querySelector(".input-search");
-
 const searchButton = document.querySelector(".search-button");;
-
 const mealsContainerDisp = document.querySelector(".Meals-container");
-
 const containersDetails = document.querySelector(".Meals-details");;
 
 
@@ -16,12 +12,12 @@ const containersDetails = document.querySelector(".Meals-details");;
 
 searchButton.addEventListener("click", () => MealSearch(inputSearch.value));
 
-// Search meal by name or any keyword
-const MealSearch = keyword => {
-    if (keyword != "") {
+// Search Food name or query
+const MealSearch = query => {
+    if (query != "") {
         searchMsg(mealsContainerDisp, true);
 
-        const url = `${mainUrl}search.php?s=${keyword}`;
+        const url = `${mainUrl}search.php?s=${query}`;
 
         fetch(url)
             .then(data => data.json())
@@ -86,12 +82,14 @@ const divClickd = id => {
 
                      <div class="card-body second-div">
                             <h4> The ingredients </h4>
-                            <li> ${foodDetails.strMeasure1} </li>
-                            <li> ${foodDetails.strMeasure2} </li>
-                            <li> ${foodDetails.strMeasure3} </li>
-                            <li> ${foodDetails.strMeasure4} </li>
-                            <li> ${foodDetails.strMeasure5} </li>
-                            <li> ${foodDetails.strMeasure6} </li>
+                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strIngredient1} </i> </li>
+                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strIngredient2} </i> </li>
+                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strIngredient3} </i> </li>
+                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strIngredient4} </i> </li>
+                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strMeasure1} </i> </li>
+                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strMeasure2} </i> </li>
+                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strMeasure3} </i> </li>
+                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strMeasure4} </i> </li>
                       </div>
             </div>
          `;
