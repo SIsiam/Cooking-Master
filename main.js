@@ -7,7 +7,7 @@ const mealsContainerDisp = document.querySelector(".Meals-container");
 const containersDetails = document.querySelector(".Meals-details");;
 
 
-// Second Step : When Users search button click Then Display This Outpoot Code is here
+// Second Step : When Users search button click Then Display this Outpoot code is here
 
 
 searchButton.addEventListener("click", () => MealSearch(inputSearch.value));
@@ -30,7 +30,7 @@ const MealSearch = query => {
     }
 }
 
-// step-3 : display All meals To search result
+// step-3 : 
 
 const displayMeals = data => data.meals != null ? mealsContainerDisp.innerHTML = createDiv(data) : notMatchingAlert();
 
