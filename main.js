@@ -82,14 +82,14 @@ const divClickd = id => {
 
                      <div class="card-body second-div">
                             <h4> The ingredients </h4>
-                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strIngredient1} </i> </li>
-                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strIngredient2} </i> </li>
-                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strIngredient3} </i> </li>
-                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strIngredient4} </i> </li>
-                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strMeasure1} </i> </li>
-                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strMeasure2} </i> </li>
-                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strMeasure3} </i> </li>
-                            <li> <i class="fas fa-check-square fa-1x"> ${foodDetails.strMeasure4} </i> </li>
+                            <li> <i class="fas fa-check-square fa-2x"> ${foodDetails.strIngredient1} </i> </li>
+                            <li> <i class="fas fa-check-square fa-2x"> ${foodDetails.strIngredient2} </i> </li>
+                            <li> <i class="fas fa-check-square fa-2x"> ${foodDetails.strIngredient3} </i> </li>
+                            <li> <i class="fas fa-check-square fa-2x"> ${foodDetails.strIngredient4} </i> </li>
+                            <li> <i class="fas fa-check-square fa-2x"> ${foodDetails.strMeasure1} </i> </li>
+                            <li> <i class="fas fa-check-square fa-2x"> ${foodDetails.strMeasure2} </i> </li>
+                            <li> <i class="fas fa-check-square fa-2x"> ${foodDetails.strMeasure3} </i> </li>
+                            <li> <i class="fas fa-check-square fa-2x"> ${foodDetails.strMeasure4} </i> </li>
                       </div>
             </div>
          `;
