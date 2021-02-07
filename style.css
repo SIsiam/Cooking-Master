@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(229, 255, 0)
+}
+.input-button {
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.Meals-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.every-Meals {
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    width: 320px;
+    height: 300px;
+    background-color: #fa0000b2;
+   cursor: pointer;
+}
+.every-Meals img {
+    background-color: #ffffff;
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+}
+.f-name {
+    background-color: #ffffff;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+
+.meal-details{
+    border-radius: 40px;
+    margin-bottom: 20px;
+}
+
+.clicked-Div-details {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    margin-bottom: 50px;
+}
+.first-div {
+    margin: 10px auto;
+}
+.second-div {
+    margin: 10px auto;
+    list-style: none;
+    font-size: 22px;
+}
+
+.details-image {
+    border-radius: 20px;
+    width: 400px;
+}
+
+                
+.not-match {
+    background-color: magenta;
+    color: white;
+    width: 700px;
+    text-align: center;
+    height: 150px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+
+}
