@@ -17,16 +17,15 @@ const displayMeal = MyFood => {
     foodContainer.innerHTML = '';
     MyFood.forEach(food => {
         const everyFoodDiv = document.createElement('div');
-        everyFoodDiv.className = 'single-result row align-items-center my-3 p-3 song-div-style';
+        everyFoodDiv.className = 'every-Meals';
         everyFoodDiv.innerHTML = `
 
-            <div class="col-md-9">
-            <img onclick = "ingredients('${food.idMeal}')" src="${food.strMealThumb}" width="200">
-            </div>
-            <div class="col-md-9">
-                <h2>${food.strMeal}</h2>
-            </div>
-           
+             <div onclick = "ingredients('${food.idMeal}')" class="food-details">
+                 <img src="${food.strMealThumb}" width="200" />
+                    <div class="details">
+                        <h1>${food.strMeal}</h1>
+                     </div>
+             </div>
             `;
         foodContainer.appendChild(everyFoodDiv);
     })
@@ -54,11 +53,11 @@ const ingredients = async (id) => {
 const displaySelectedFood = selectFood => {
     const ingredientsDiv = document.getElementById('food-details');
     ingredientsDiv.innerHTML = '';
-    ingredientsDiv.className = "select"
+    ingredientsDiv.className = "select-food"
     ingredientsDiv.innerHTML = `
                 <div class="col-md-9">
                 <h2>${selectFood.strMeal}</h2>
-                <img src="${selectFood.strMealThumb}" width="300">
+                <img src="${selectFood.strMealThumb}" >
                 </div>
                 <div class="card-body second-div">
                 <h4> The ingredients </h4>
