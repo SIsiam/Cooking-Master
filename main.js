@@ -7,7 +7,7 @@ const searchFood = () => {
     fetch(myUrl)
         .then(respo => respo.json())
         .then(myJsonData => displayMeal(myJsonData.meals))
-        .catch(error => displayError('Oppps!! Please try again later!'));
+        .catch(error => ErroMsg('Oppps!! Please try again! Enter please Valid Name'));
 }
 
 
@@ -32,7 +32,7 @@ const displayMeal = MyFood => {
 }
 
 
-// Food Click when User Click anyFood item 
+// Click Food when User Any Food Item 
 
 const ingredients = async (id) => {
     const url = `https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`
@@ -40,12 +40,12 @@ const ingredients = async (id) => {
     console.log(url);
 
     try {
-    const res = await fetch(url);
-    const data = await res.json();
-    displaySelectedFood(data.meals[0]);
+        const res = await fetch(url);
+        const data = await res.json();
+        displaySelectedFood(data.meals[0]);
     }
     catch (error) {
-        displayError('Sorry! I failed to load lyrics, Please try again later!!!')
+        ErroMsg(console.log("This Is an Eror"))
     }
 
 }
@@ -56,11 +56,11 @@ const displaySelectedFood = selectFood => {
     ingredientsDiv.className = "select-food"
     ingredientsDiv.innerHTML = `
                 <div class="col-md-9">
-                <h2>${selectFood.strMeal}</h2>
+                <h1>${selectFood.strMeal}</h1>
                 <img src="${selectFood.strMealThumb}" >
                 </div>
                 <div class="card-body second-div">
-                <h4> The ingredients </h4>
+                <h2> ingredients </h2>
                 <li> <i class="fas fa-check-square fa-2x"> ${selectFood.strIngredient1} </i> </li>
                 <li> <i class="fas fa-check-square fa-2x"> ${selectFood.strIngredient2} </i> </li>
                 <li> <i class="fas fa-check-square fa-2x"> ${selectFood.strIngredient3} </i> </li>
@@ -73,8 +73,9 @@ const displaySelectedFood = selectFood => {
     `
 
 }
-
-const displayError = error => {
+// Eror Msg Show 
+const ErroMsg = error => {
     const errorMsg = document.getElementById('err-Msg');
+    errorMsg.className = "err-msg"
     errorMsg.innerText = error;
 }

@@ -1,6 +1,8 @@
 body{
-    background-color: #13141b;
-    color: #ffffff;
+    color: black;
+    background-color: #F4D03F;
+    background-image: linear-gradient(0deg, #F4D03F 0%, #16A085 100%);
+    background-repeat: no-repeat;
     background-size: 100%;
 }
 
@@ -54,19 +56,15 @@ body{
     border-radius: 10px;
 }
 
-#food-details{
-    border-radius: 40px;
-    margin-bottom: 20px;
-}
-
-#food-details {
+.select-food {
     width: 500px;
     padding: 30px;
     height: auto;
     margin: auto;
     background-color: #fe4089;
-    background-image: linear-gradient(90deg, #d240fe 0%, #FA709A 100%);
+    background-image: linear-gradient(360deg, #4cf099 0%, #f1ec44 100%);
     color: black;
+    border-radius: 25px;
 }
 .select-food img {
     width: 400px;
@@ -75,4 +73,13 @@ body{
 }
 .select-food li {
     list-style: none;
+}
+.err-msg {
+    color: black;
+    background-color: magenta;
+    padding: 20px;
+    margin: auto;
+    width: 30%;
+    border-radius: 22px;
+    height: 120px;
 }
