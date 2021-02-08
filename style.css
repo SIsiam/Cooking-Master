@@ -1,84 +1,60 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 217, 0)
+body{
+    background-color: #13141b;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
 }
-.input-button {
-    width: 500px;
-    margin: auto;
-    margin-top: 20px;
 
+.form-control{
+    background-color:rgb(0, 255, 191);
+    padding: 22px;
+    border: none;
+    border-radius: 25px;
 }
-.input-button input {
+.btn{
+    border-radius: 1.5rem;
+    padding: 9px 20px;
+}
+
+.btn-privious{
+    background: rgba(83, 24, 223, 0.2);
+    color: #ffffff;
+}
+.navbar-toggler {
+    border: none;
+}
+.search-box{
+    position: relative;
+}
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+.single-result{
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 15px;
 }
 
-.Meals-container {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
-}
-.every-Meals {
-    border-radius: 15px;
-    padding: 20px;
-    text-align: center;
-    width: 320px;
-    height: 300px;
-    background-color: #fa0000b2;
-   cursor: pointer;
-}
-.every-Meals img {
-    background-color: #ffffff;
-    width: 280px;
-    height: 200px;
-    border-radius: 10px;
-}
-.f-name {
-    background-color: #ffffff;
+/* .song-div-style {
+    background-color: #85FFBD;
     color: black;
-    padding: 10px;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+
+}
+.song-div-style img {
     border-radius: 10px;
-    margin-top: 10px;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
 }
-
-
-.meal-details{
+.song-lyrics-style {
+    background-color: #FEE140;
+    background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+    size: cover;
+    width: 50%;
+    margin: auto;
     border-radius: 40px;
-    margin-bottom: 20px;
-}
-
-.clicked-Div-details {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 20px;
-    margin-bottom: 50px;
-}
-.first-div {
-    margin: 10px auto;
-}
-.second-div {
-    margin: 10px auto;
-    list-style: none;
-    font-size: 22px;
-}
-
-.details-image {
-    border-radius: 20px;
-    width: 400px;
-}
-
-                
-.not-match {
-    background-color: magenta;
-    color: white;
-    width: 700px;
+    padding: 30px;
+    text-shadow: 2px 2px 8px rgb(225, 0, 255) ;
     text-align: center;
-    height: 150px;
-    border-radius: 20px;
-    padding: 20px;
-    margin-top: 30px;
-
-}
+} */
